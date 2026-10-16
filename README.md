@@ -12,7 +12,7 @@ REST API для списка задач на стандартной библио
 
 ## Окружение
 
-Go 1.24.7 (нужен Go 1.22+ для маршрутов вида `GET /tasks/{id}`), Ubuntu 24.04, curl 8.5.
+Ubuntu 26.04 LTS, Go 1.22+ (нужен для маршрутов вида `GET /tasks/{id}`), curl.
 
 ## Структура
 
@@ -37,6 +37,7 @@ go run ./cmd/server               # или: make run      (Windows: .\run.ps1 ru
 PORT=9090 go run ./cmd/server     # другой порт
 make test                         # юнит-тесты      (Windows: .\run.ps1 test)
 make build                        # бинарник в ./bin (Windows: .\run.ps1 build)
+./scripts/demo.sh                 # все тестовые запросы (во втором терминале)
 ```
 
 ## Маршруты
